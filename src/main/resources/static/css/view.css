@@ -1,0 +1,162 @@
+	body {
+	    font-family: 'Noto Sans KR', sans-serif;
+	    background-color: #ffffff;
+	    color: #333333;
+	    margin: 0;
+	    padding: 40px 20px;
+	}
+	
+	.view-table1{
+	    width: 100%;
+	    max-width: 1200px;
+	    margin: 300px auto 50px auto;
+	    border-collapse: collapse;
+	}
+	
+	.view-image{
+		padding-right: 40px; /* 이미지와 텍스트 사이 여백 */
+	    width: 40%;
+	}
+	
+	.view-image2{
+	    width: 100%;
+	}
+	
+	.image-info{
+		padding: 0px 0px 5px;
+	    border-bottom: 2px solid #222
+	}
+	
+	.pbrand{
+		font-size: 12px;
+		font-weight: 600;
+		margin: 0px;
+	}
+	
+	.pname{
+		font-size: 20px;
+		font-weight: 800;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.pgram{
+		font-size: 14px;
+		color: #555; 
+	}
+	
+	.psale{
+		font-size: 24px;
+		font-weight: 800;
+		color: #ff4757;
+	}
+	
+	.pprice{
+		color: #666;
+		font-size: 14px;
+		margin-top: 50px;
+	}
+	
+	.view-info{
+		font-size: 12px;
+		font-weight: 800;
+	}
+	
+	.view-info-title{
+		font-size: 11px;
+		font-weight: 500;
+	}
+	
+	.view-info-con{
+		font-size: 11px;
+		font-weight: 500;
+	}
+	
+	.con-title{
+		padding: 10px;
+		font-size: 16px;
+		font-weight: 800;
+	}
+	
+	.con-content{
+		background-color: #f8f9fa;
+		padding: 30px 30px 50px;
+		line-height: 1.8;
+		font-size: 14px;
+		min-height: 500px;
+	}
+	
+	.view-table2{
+	    width: 100%;
+	    max-width: 1200px;
+	    margin: 0px auto 50px auto;
+	    border-collapse: collapse;
+	}
+	
+	.view-button{
+		display: flex; 
+		align-items: center;   
+		gap: 10px;
+		text-align: center;
+		margin: 50px auto 100px auto;
+		width: 100%;
+		justify-content: center;
+	}
+	.cart-button{
+		background-color: #A6633C;
+		width: 120px;
+		height: 40px;
+		border: none;
+		border-radius: 10px;
+		color: #ffffff;
+		font-size: 14px;
+	}
+	
+	.buy-button{
+		background-color: #3098F2;
+		width: 120px;
+		height: 40px;
+		border: none;
+		border-radius: 10px;
+		color: #ffffff;
+		font-size: 14px;
+}
+
+	.best-sticker{
+		width: 100%;
+	    height: 25px;       /* ★ 글자가 없어도 25px의 높이를 무조건 차지하게 고정 */
+	    display: flex;
+	    align-items: center;
+	    margin-bottom: 20px;
+	}
+	
+	.best-text{
+		width: 50px;
+	    height: 20px;
+	    color: #ffffff;
+	    font-size: 14px;
+	    background-color: #3098F2;
+	    border-radius: 5px;
+	    text-align: center;
+	    padding: 2px auto;
+	    margin-bottom: 3px;
+		
+	}
+
+	.back{
+		text-align: left;
+		color: #888;
+		margin: 10px 0px;
+	}
+	
+	.back a{
+		text-decoration: none;
+		color: #888;
+		font-size: 13px;
+	}
+	
+	.back a i{
+		color: #888;
+		font-size: 13px;
+		margin: 0px 10px 0px 0px;
+	}

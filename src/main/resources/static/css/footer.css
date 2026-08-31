@@ -1,0 +1,85 @@
+	footer {
+	   width: 100%;
+	    background-color: #f8f9fa;
+	    border-top: 1px solid #e5e5e5;
+	    /* margin-top: 200px; <- 기존의 과도한 마진 탑 제거 (Flex가 알아서 밀어줌) */
+	    margin-top: auto;  /* 안전장치 */
+	    padding: 20px 0 50px 0;
+	    font-family: 'Noto Sans KR', sans-serif;
+	}
+	
+	.footer {
+	    width: 1200px;
+	    margin: 0 auto;
+	    padding: 0 50px;
+	    box-sizing: border-box;
+	}
+	
+	.logo1-footer {
+		width: 10px;
+		display: block;
+		margin: 0;
+	}
+	
+	.footer-table {
+	    width: 100%;
+	    border-collapse: collapse;
+	    table-layout: fixed;
+	}
+	
+	.footer-table th, 
+	.footer-table td {
+	    padding: 5px 5px;
+	    font-size: 9px;        /* ★ 기존보다 폰트 사이즈를 축소 */
+	    color: #666;        
+	    text-align: left;
+	    vertical-align: middle;
+	    line-height: 1.2;
+	}
+	
+	.footer-table th {
+	    font-weight: 500;
+	    color: #444; 
+	    width: 20px; 
+	}
+	
+	.footer-table tr:nth-child(2) td {
+	    font-size: 10px;
+	    font-weight: 600;
+	    color: #222;
+	    padding-bottom: 10px;
+	    border-bottom: 1px solid #666; /* 얇은 구분선 추가 */
+	}
+	
+	/* 소제목 바로 밑 줄에 상단 여백 부여 */
+	.footer-table tr:nth-child(3) th,
+	.footer-table tr:nth-child(3) td {
+	    padding-top: 10px;
+	}
+	
+	
+	.footer-table .logo1-footer {
+	    width: 45px;
+	    height: auto;
+	    display: block;
+	    
+	    margin: 30px 0px;
+	}
+	
+	.brand-right-title {
+	    font-size: 16px;
+	    font-weight: 800;
+	    color: #000000;
+	    text-align: right;
+	    letter-spacing: -0.5px;
+	    display: table-cell;
+	}
+	
+	.copy{
+		margin-top: 10px;
+	    padding-top: 15px;
+	    border-top: 1px solid #666;
+	    font-size: 9px;
+	    color: #999999;
+	    letter-spacing: 0.3px;
+	}

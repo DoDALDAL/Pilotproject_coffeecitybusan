@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.Pilotproject.dao.ImemberDAO">
+	<select id="findById" resultType="com.springboot.Pilotproject.dto.memberDTO">
+		select * from coffeeMember where mid=#{mid}
+	</select>
+	<select id="memberList" resultType="com.springboot.Pilotproject.dto.memberDTO">
+		select * from coffeeMember order by mno desc
+	</select>
+	<select id="memberView" resultType="com.springboot.Pilotproject.dto.memberDTO">
+		select * from coffeeMember where mno=#{mno}
+	</select>
+	<insert id="memberWrite">
+		insert into coffeeMember(mno, mid, mpasswd, mname, mbirth, mgender, mtel, memail, maddr, mzipno, mdate, mauthority)
+		 values(coffeeMember_seq.NEXTVAL, #{mid}, #{mpasswd}, #{mname}, #{mbirth}, #{mgender}, #{mtel}, #{memail}, #{maddr}, #{mzipno}, SYSDATE, 'USER')
+	</insert>
+	<update id="memberUpdate">
+		update coffeeMember
+		 set mpasswd=#{mpasswd}, mname=#{mname}, mtel=#{mtel}, memail=#{memail}, maddr=#{maddr}, mzipno=#{mzipno}
+		 where mno=#{mno}
+	</update>
+	<delete id="memberDelete">
+		delete from coffeeMember
+		 where mid=#{mid}
+	</delete>
+</mapper>

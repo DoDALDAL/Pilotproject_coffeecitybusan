@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+	
+	body {
+		height: 100%;
+	    margin: 0;
+	    padding: 0;
+	    font-family: 'Noto Sans KR', sans-serif;
+	    display: flex;
+	    flex-direction: column;
+	    color: #333333;
+	}
+	
+
+	.main-content {
+	    flex: 1;          /* 이 속성이 푸터를 화면 최하단으로 강제 이동시킵니다 */
+	    width: 1200px;    /* 푸터 중앙 정렬 너비(1200px)와 동기화 */
+	    margin: 20px auto 200px;   /* 본문 가로 중앙 정렬 */
+	    padding: 0px 50px 50px 50px; /* 상단 헤더 공간(200px) 확보 및 내부 여백 */
+	    box-sizing: border-box;
+	}
+	
+	
+	.main-banner {
+	    width: 100%;
+	    height: 600px; 
+	    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/mainBusan.jpg');
+	    background-size: cover;         
+	    background-position: center;     
+	    background-repeat: no-repeat;
+	    position: relative;
+	    overflow: hidden;
+	}
+	
+	.banner-text {
+	   	position: absolute;   
+	    top: 60%;             
+	    left: 50%;            
+	    transform: translate(-50%, -50%); 
+	    text-align: center;   
+	    color: #ffffff;       
+	    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); 
+	    width: 100%;          
+	    max-width: 800px;     
+	    z-index: 10;
+	    
+	    /* 자식 요소(타이틀, 서브타이틀, 버튼)를 수직으로 중앙 정렬하기 위함 */
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	
+	.banner-title {
+	    font-size: 32px;
+	    font-weight: bold;
+	    margin: 50px 0 15px 0;
+	}
+	
+	.banner-subtitle {
+	    font-size: 18px;
+	    margin: 0 0 50px 0;
+	    opacity: 0.9;
+	}
+	
+	.shopping-link {
+		display: inline-block;
+	    width: 150px;               /* 버튼 가로 너비 */
+	    height: 40px;               /* 버튼 세로 높이 */
+	    line-height: 38px;          /* 글자가 세로 정중앙에 오도록 설정 (높이 - 테두리두께) */
+	    color: #ffffff;             /* 짙은 차콜/검은색 글자색 */
+	    font-size: 13px;
+	    text-decoration: none;      /* 링크 밑줄 제거 */
+	    border: 1px solid #ffffff;
+	    box-sizing: border-box;
+	    text-shadow: none;          /* 부모의 글자 그림자가 버튼 글자엔 적용되지 않도록 초기화 */
+	    transition: all 0.3s ease;  /* 마우스 올렸을 때 부드러운 전환 효과 */
+	    cursor: pointer;
+	}
+	
+	.shopping-linka {
+		display: inline-block;
+	    width: 150px;               /* 버튼 가로 너비 */
+	    height: 40px;               /* 버튼 세로 높이 */
+	    line-height: 38px;          /* 글자가 세로 정중앙에 오도록 설정 (높이 - 테두리두께) */
+	    color: #333333;      
+	    font-size: 13px;
+	    text-decoration: none;      /* 링크 밑줄 제거 */
+	    border: 1px solid #e5e5e5;
+	    box-sizing: border-box;
+	    text-shadow: none;          /* 부모의 글자 그림자가 버튼 글자엔 적용되지 않도록 초기화 */
+	    transition: all 0.3s ease;  /* 마우스 올렸을 때 부드러운 전환 효과 */
+	    cursor: pointer;
+	    text-align: center;
+	}
+	
+	.shopping-link2 {
+		text-align: center;
+		margin: 0px auto;
+	}
+	
+	/* 타이틀 영역 정돈 */
+	.section-title {
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 80px;
+	}
+	
+	.best {
+		font-size: 24px;
+		font-weight: 800;
+		color: #333333;
+		margin-top: 80px;
+		margin-bottom: 5px;
+	}	
+	
+	.productBest-table {
+	    margin: 0 auto;
+	    border-collapse: collapse;
+	    width: 100%;
+	    
+	    /* 화면이 줄어들 때 내부에 있는 td들이 아래로 떨어질 수 있도록 설정 */
+	    display: flex;
+	    flex-direction: column;
+	}
+	
+	.productBest-table tr{
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 60px;
+		
+		width: 100%;
+	    border-bottom: 1px solid #e5e5e5; 
+	}
+	
+	.productBest-table td{
+		padding: 20px;
+		vertical-align: top;
+		box-sizing: border-box;
+		
+		width: 25%;
+	}
+	
+	.productBest-table td img{
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+	
+	.bestPbrand{
+		font-size: 10px;
+		margin: 7px 0px 10px;
+		background-color: #f8f9fa;
+		border-radius: 20px;
+		padding: 5px 0px 5px 10px;
+		color: #666666;
+	}
+	
+	.bestPname{
+		text-decoration: none; 
+		font-size: 16px;
+		font-weight: 800;
+		color: #222222;
+	}
+	
+	.bestPgram{
+		font-size: 14px;
+	    color: #555;
+	}	
+	
+	.bestPprice{
+		font-size: 13px;
+	    color: #666;
+	    margin-bottom: 4px; 
+	}
+	
+	.bestPsale{
+		font-weight: 800; 
+	    color: #ff4757; 
+	    font-size: 16px; 
+	    margin-bottom: 4px; 
+	}
+	
+	.pbest{
+		width: 50px;
+	    height: 20px;
+	    color: #ffffff;
+	    font-size: 14px;
+	    background-color: #3098F2;
+	    border-radius: 5px;
+	    text-align: center;
+	    padding: 2px auto;
+	    margin-bottom: 3px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
